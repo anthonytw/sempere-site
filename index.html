@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; font-src 'self'">
 <title>Sempere</title>
 <meta name="description" content="Sempere: end-to-end-encrypted handwritten notes for iPad, iPhone, Mac, the command line and the web. Coming soon.">
 <style>
+@font-face{font-family:"Newsreader";src:url(fonts/newsreader-normal.woff2) format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Newsreader";src:url(fonts/newsreader-italic.woff2) format("woff2");font-weight:200 800;font-style:italic;font-display:swap}
 :root{--paper:#f7f3ea;--ink:#1d2a44;--muted:#5d6679;--accent:#b08a3e}
 @media (prefers-color-scheme:dark){:root{--paper:#121a2b;--ink:#ece6d8;--muted:#9aa3b5;--accent:#d2b06a}}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--paper);color:var(--ink);font:17px/1.6 Georgia,"Iowan Old Style",serif;padding:24px 16px}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--paper);color:var(--ink);font:18px/1.6 "Newsreader",Georgia,serif;font-optical-sizing:auto;padding:24px 16px}
 main{max-width:34rem;text-align:center}
-h1{font-size:clamp(2.6rem,9vw,4rem);font-weight:600;margin:0;letter-spacing:.01em}
+h1{font-size:clamp(2.8rem,10vw,4.6rem);font-weight:500;margin:0;letter-spacing:.01em}
 svg{display:block;margin:2px auto 22px;width:min(220px,60vw);height:auto}
 p{margin:0 0 14px}
-.lede{font-size:1.15rem}
-.muted{color:var(--muted);font:14px/1.5 -apple-system,system-ui,sans-serif}
+.lede{font-size:1.3rem;font-style:italic}
 a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px}
 </style>
 </head>
@@ -26,8 +27,6 @@ a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:3px
 <svg viewBox="0 0 220 16" aria-hidden="true"><path d="M4 10 C40 3, 70 14, 110 8 S180 4, 216 9" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/></svg>
 <p class="lede">Your handwriting. Your keys.</p>
 <p>End-to-end-encrypted handwritten notes for iPad, iPhone and Mac, with a command-line tool and a web viewer. Open source. Coming soon.</p>
-<p class="muted">This page makes no third-party requests and sets no cookies.<br>
-Made by <a href="https://me.anthonywertz.com">Anthony Wertz</a></p>
 </main>
 </body>
 </html>
