@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sempere.anthonywertz.com/sitemap-index.xml
